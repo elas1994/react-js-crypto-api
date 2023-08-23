@@ -28,11 +28,11 @@ function App() {
     <>
       <Navbar />
       <Routes>
-        <Route path="/react-js-crypto-api/" element={<Coins coins={coins} />} />
-        <Route path="/react-js-crypto-api/coin" element={<Coin />}>
-          <Route path=":coinId" element={<Coin />} />
+        <Route path="/" element={<Coins coins={coins} />} />
+        <Route path="/coin" element={<Coin />}>
+          <Route path="/:coinId" element={<Coin />} />
         </Route>
-        <Route path="/react-js-crypto-api/" element={<CoinItem />} />
+        <Route path="/" element={<CoinItem />} />
       </Routes>
     </>
   );

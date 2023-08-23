@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <Link to="/react-js-crypto-api/">
+    <Link to="/">
       <div className="navbar">
         <FaCoins className="icon" />
         <h1>
