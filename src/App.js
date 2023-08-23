@@ -4,6 +4,7 @@ import Coins from "./components/Coins/Coins";
 import Navbar from "./components/Navbar/Navbar";
 import { Route, Routes } from "react-router-dom";
 import Coin from "./routes/Coin/Coin";
+import CoinItem from "./components/CoinItem/CoinItem";
 
 function App() {
   const [coins, setCoins] = useState([]);
@@ -28,9 +29,10 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/react-js-crypto-api/" element={<Coins coins={coins} />} />
-        <Route path="/react-js-crypto-api/" element={<Coin />}>
+        <Route path="/react-js-crypto-api/coin" element={<Coin />}>
           <Route path=":coinId" element={<Coin />} />
         </Route>
+        <Route path="/react-js-crypto-api/" element={<CoinItem />} />
       </Routes>
     </>
   );
