@@ -1,7 +1,7 @@
 {
-  "homepage": "https://elas1994.github.io/react-js-crypto-api",
   "name": "react-js-crypto-api",
   "version": "0.1.0",
+  "homepage": "https://elas1994.github.io/react-js-crypto-api",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
