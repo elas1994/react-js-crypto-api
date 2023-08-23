@@ -1,5 +1,6 @@
 import React from "react";
 import "./CoinItem.css";
+import { Link } from "react-router-dom";
 
 const CoinItem = (props) => {
   return (

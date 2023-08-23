@@ -19,11 +19,7 @@ const Coins = (props) => {
 
         {props.coins.map((coins1) => {
           return (
-            <Link
-              to={`/react-js-crypto-api/coin/${coins1.id}`}
-              element={<Coin />}
-              key={coins1.id}
-            >
+            <Link to={`/coin/${coins1.id}`} element={<Coin />} key={coins1.id}>
               <CoinItem coins={coins1} key={coins1.id} />
             </Link>
           );
